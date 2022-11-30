@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torque Fitness</title>
+    <link rel="stylesheet" href="../static/css/member.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark nav-1" id="navbar">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="/" style="text-decoration: none;"><h2 class="logo"><span>TORQUE</span>FITNESS</h2></a>
+        <!-- <div id="icon">
+          <i class="fas fa-bars"></i>
+        </div> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="padding: 0.25rem 2.75rem !important;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav navbar-expand-md ml-auto nav-2">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/#feature">Features</a>
+            </li>
+    
+            <li class="nav-item ">
+              <a class="nav-link" href="/#contact">ContactUs</a>
+            </li>
+            <li class="nav-item">
+              <div class="drop">
+                <a class="nav-link" href="#">Programs</a>
+                <div class="dropdown-content">
+                  <a href="personalTraining.pug">Personal Training</a>
+                  <a href="./member.pug">Membership</a>
+                  <!-- <a href="#">Link 3</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./trainers.pug">Trainer</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+
+
+    <!-- login form -->
+
+    <div class="text-center" id="login">
+      <div class="container py-3 bord">
+        <nav class="navbar navbar-expand-bg navbar-dark bg-dark">
+          <h2 class="logo" style="color: rgb(6, 246, 6);">#{user.Name}</h2>
+
+          <ul class="navbar-nav navbar-expand-sm nav-2">
+  
+            <li class="nav-item">
+              <div class="drop">
+                <a class="nav-link" href="#">#{user.Email}</a>
+                <div class="dropdown-content">
+                  <a href="./logout.pug">Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="alert alert-success alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Success!</strong> You are now logged in.
+        </div>
+        <div class="package">
+          <ul class="nav nav-tabs nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#exercise" style="text-decoration: none; color:black">
+                  <h4>Exercises</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#diet" style="text-decoration: none; color:black">
+                  <h4>Diets</h4>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#profile" style="text-decoration: none; color:black">
+                  <h4>Profile</h4>
+                </a>
+              </li>
+          </ul>
+        
+          <div class="tab-content">
+            <div id="exercise" class="container tab-pane active" style="width: 95% !important;"><br>
+              <div id="accordion">
+                <!-- videos for losing fat -->
+                <!-- dropdown -->
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne" style="text-decoration: none; color:black">
+                    |  Fat Loss Exercises
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body"> 
+                      <!-- content -->
+                    
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/H3jJ29oE8Zg" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Exercise to lose Weight</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/7KSNmziMqog" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">Fat Burning Routine</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/o20sLxinfwc" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Lose Belly Fat</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/YjmQVMLhNT4" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Lose Fat At Home</p>
+                          </div>
+                        </div>  
+                      </div>
+                      <!-- fat videos ends -->
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Yoga Exercises -->
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" style="text-decoration: none; color:black">
+                    |  Yoga
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/4K2xTVRDJgA"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Early in the Morning</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/rt1bsoOukjI" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">14 min yoga everyday</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/sTANio_2E0Q" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Stretch for Anxity/Stress</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/inpok4MKVLM" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">5 min Meditation</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Yoga exercises ends -->
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" style="text-decoration: none; color:black">
+                    |  Body Buliding at Home
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/jlWWOUeFoNc"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Monday / Thursday</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/5ISgz39DoP0" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">Tuesday / Friday</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/jRcaZOhb-Rc" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">wednesday / Friday</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/HZ2kqpnjUCY" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Core Workout</p>
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- warm up before workout -->
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour" style="text-decoration: none; color:black">
+                    |  warm up exercise
+                    </a>
+                  </div>
+                  <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/VecbXgWY0DI"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">warm up #1</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/-p0PA9Zt8zk" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">warm up #2</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/yyCkO-UtBFM" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Full body workout #3</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/1YY0xyCgITc" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">warm up #4</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- warm up ends -->
+
+                <!-- pull ups -->
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive" style="text-decoration: none; color:black">
+                    |  Pull Ups and Push Ups
+                    </a>
+                  </div>
+                  <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/eGo4IYlbE5g"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">perfect pull ups</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/hkBcTOa21oQ" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">Improve Your pull ups</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/IODxDxX7oi4" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Perfect push ups #1</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/VQKqjHtY8jA" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Push ups #2</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ends -->
+
+                <!-- biceps -->
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix" style="text-decoration: none; color:black">
+                    |  Biceps
+                    </a>
+                  </div>
+                  <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/GxjWKyzMx3E"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">9 biceps exercise</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/1BI_LsEh1wM" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">Biceps #2</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/Ii5vIh0EM34" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Biceps at home</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/KzZILhT_YvY" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Biceps at home #2</p>
+                          </div>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+              
+              <!-- yoga exercises -->
+
+              
+              <br><hr><br>
+              
+            </div>
+
+
+
+            <!-- diets -->
+            <div id="diet" class="container tab-pane" style="width: 95% !important;"><br>
+              <div id="accordion">
+                <!-- for fat loss -->
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne" style="text-decoration: none; color:black">
+                      | Diet For Weight Loss
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/lyg6XfP5r0M"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Simple weight loss Indian diet</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/ayc0_nKT7Po" 
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                          </iframe>
+                          <p class="card-text text-white">Exercise or Diet for weight loss</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/JaMQfQK1_i8" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Full day of Eating for weight loss</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/5Pqrq4iOjOM" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Drinks for weight loss</p>
+                          </div>
+                        </div>  
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- weight loss ends -->
+
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" style="text-decoration: none; color:black">
+                      | Diet For Body Bulding
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="card-deck">
+
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/vESuQJxeR1k"
+                            | title="YouTube video player" frameborder="0" 
+                            | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Full Day Diet Plan</p>
+                          </div>
+                        </div>
+                        <div class="card bg-dark">
+                          <div class="card-body text-center">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/42PTdcxTfpc" 
+                              | title="YouTube video player" frameborder="0" 
+                              | allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              | allowfullscreen>
+                            </iframe>
+                            <p class="card-text text-white">Protein As Diet</p>
+                          </div>
+                        </div> 
+                          
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+              
+              
+              <br><hr><br>
+
+            </div>
+
+            <!-- profile -->
+            <div id="profile" class="container tab-pane" style="width: 95% !important;"><br>
+              <div class="card-deck">
+                <div class="card bg-secondary">
+                  <div class="card-body text-center">
+                    <table class="table table-dark table-bordered">
+                      <tbody>
+                        <tr>
+                          <td><strong>Name</strong></td>
+                          <td>#{user.Name}</td>
+                          
+                        </tr>
+                        <tr>
+                          <td><strong>Gender</strong></td>
+                          <td>#{user.Gender}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Age</strong></td>
+                          <td>#{user.Age}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Contact</strong></td>
+                          <td>#{user.Mobile}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Email</strong></td>
+                          <td>#{user.Email}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Weight</strong></td>
+                          <td>#{user.Weight}</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Address</strong></td>
+                          <td>#{user.Address}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button class="btn btn-warning" onclick="Update()">UPDATE</button>
+                    <button class="btn btn-danger" onclick="Delete()">DELETE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer starts -->
+
+    <footer class="page-footer font-small bg-dark text-white">
+      <div class="bg-color pt-4">
+          <div class="container">
+              <div class="row margintop80">
+                  <div class="col-sm-4">
+                    |  TORQUE FITNESS was started on World Health Day on 7 th April 2022.
+                    |  TORQUE FITNESS offers the most exciting and up-to-date curriculum as well as ongoing training in all aspects of the fitness industry.
+                    |  TORQUE FITNESS is the only Advanced Personal Trainer program, which offers you low-cost tuition, fast test results and complete career development.
+                  </div>
+                  <div class="col-sm-4">
+                      <h4 style="color: rgba(231, 209, 7, 0.922);">OUR SITEMAP</h4>
+                      <p style="color:red;font-weight:900">____________</p>
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <a href="/" style="color:white;">> HOME</a><br>
+                              <a href="./member.pug" style="color:white">> Membership</a><br>
+                              <a href="/#contact" style="color:white">> Constact-Us</a><br>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="/#about" style="color:white">> About us</a><br>
+                            <a href="./member.pug" style="color:white">> Members</a><br>
+                            <a href="./admin_login.pug" style="color:white">> Admin Panel</a><br>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-4">
+                      <h4 style="color: rgba(231, 209, 7, 0.922);">NEWSLETTER</h4>
+                      <p style="color:red;font-weight:900">____________</p>
+                      <br>
+                      <p>Sign Up for Our Newsletter to Get Latest Updates & Services</p>
+                      <br>
+                      <form action="">
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Search">
+                              <!-- <div class="input-group-append"> -->
+                              <button class="btn btn-danger text-white" type="submit" style="background-color: red;">➩</button>
+                              <!-- </div> -->
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-copyright text-center py-3">© 2022 <span style="color: red;"> TORQUE</span>FITNESS. |All Copyrights Reserverd. | Developed By <span style="color:rgb(255, 217, 0)">GUNJAN KUMAR</span>
+          </div>
+      </div>
+
+
+      <!-- Copyright -->
+
+      <!-- Copyright -->
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/scripts/operation.js"></script>
+  </body>
+</html>

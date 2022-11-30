@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torque Fitness</title>
+    <link rel="stylesheet" href="../static/css/member.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark nav-1" id="navbar">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="/" style="text-decoration: none;"><h2 class="logo"><span>TORQUE</span>FITNESS</h2></a>
+        <!-- <div id="icon">
+          <i class="fas fa-bars"></i>
+        </div> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav navbar-expand-md ml-auto nav-2">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/#feature">Features</a>
+            </li>
+    
+            <li class="nav-item ">
+              <a class="nav-link" href="/#contact">ContactUs</a>
+            </li>
+            <li class="nav-item">
+              <div class="drop">
+                <a class="nav-link" href="#">Programs</a>
+                <div class="dropdown-content">
+                  <a href="personalTraining.pug">Personal Training</a>
+                  <a href="./member.pug">Membership</a>
+                  <!-- <a href="#">Link 3</a> -->
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./trainers.pug">Trainer</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- header ends -->
+
+
+    <!-- login form -->
+
+    <div class="text-center" id="admin_login">
+      <div class="container py-3 bord">
+        <nav class="navbar navbar-expand-bg navbar-dark bg-dark">
+          <h2 class="logo" style="color: rgb(197, 6, 6);">#{user.Name}</h2>
+
+          <ul class="navbar-nav navbar-expand-sm nav-2">
+  
+            <li class="nav-item">
+              <div class="drop">
+                <a class="nav-link" href="#">#{user.Email}</a>
+                <div class="dropdown-content">
+                  <a href="./admin_logout.pug">Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="alert alert-success alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Success!</strong> You are now logged in.
+        </div>
+        <div class="package">
+          <ul class="nav nav-tabs nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#notice" style="text-decoration: none; color:black">
+                  <h4>NOTICES UPLOAD</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#members" style="text-decoration: none; color:black">
+                  <h4>MEMBERS</h4>
+                </a>
+              </li>
+              
+          </ul>
+        
+          <div class="tab-content">
+
+            <div id="notice" class="tab-pane active"><br>
+              
+                <form action="/news_update" method="post">
+                    <div class="form-group">
+                      <label for="comment">Upload News</label>
+                      <textarea class="form-control" rows="5" id="comment" name="news" style="width: -webkit-fill-available;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">send update</button>
+                </form>
+              
+            </div>
+
+
+
+            <!-- diets -->
+            <div id="members" class="container tab-pane" style="width: 92% !important;"><br>
+              
+              <input class="form-control" id="myInput" type="text" placeholder="Search.." style="width: -webkit-fill-available;"><br>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  each member in members
+                    <tr>
+                      td= member.Name
+                      td= member.Mobile
+                      td= member.Email
+                      if member.Plan_expire >= new Date()
+                        <td style="color: green;">Active</td>
+                      else
+                        <td style="color: red;">
+                        |  No Plan
+                        <span>
+                          <form action="/inform" method="post">
+                            <input type="email" name="email" id="email" value="#{member.Email}" hidden>
+                            <button type="submit" class="btn btn-primary">Remind</button>
+                          </form>
+                        </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+              </table>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer starts -->
+
+    <footer class="page-footer font-small bg-dark text-white">
+      <div class="bg-color pt-4">
+          <div class="container">
+              <div class="row margintop80">
+                  <div class="col-sm-4">
+                    |  TORQUE FITNESS was started on World Health Day on 7 th April 2022.
+                    |  TORQUE FITNESS offers the most exciting and up-to-date curriculum as well as ongoing training in all aspects of the fitness industry.
+                    |  TORQUE FITNESS is the only Advanced Personal Trainer program, which offers you low-cost tuition, fast test results and complete career development.
+                  </div>
+                  <div class="col-sm-4">
+                      <h4 style="color: rgba(231, 209, 7, 0.922);">OUR SITEMAP</h4>
+                      <p style="color:red;font-weight:900">____________</p>
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <a href="/" style="color:white;">> HOME</a><br>
+                              <a href="./member.pug" style="color:white">> Membership</a><br>
+                              <a href="/#contact" style="color:white">> Constact-Us</a><br>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="/#about" style="color:white">> About us</a><br>
+                            <a href="./member.pug" style="color:white">> Members</a><br>
+                            <a href="./admin_login.pug" style="color:white">> Admin Panel</a><br>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-4">
+                      <h4 style="color: rgba(231, 209, 7, 0.922);">NEWSLETTER</h4>
+                      <p style="color:red;font-weight:900">____________</p>
+                      <br>
+                      <p>Sign Up for Our Newsletter to Get Latest Updates & Services</p>
+                      <br>
+                      <form action="">
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Search">
+                              <!-- <div class="input-group-append"> -->
+                              <button class="btn btn-danger text-white" type="submit" style="background-color: red;">➩</button>
+                              <!-- </div> -->
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-copyright text-center py-3">© 2022 <span style="color: red;"> TORQUE</span>FITNESS. |All Copyrights Reserverd. | Developed By <span style="color:rgb(255, 217, 0)">GUNJAN KUMAR</span>
+          </div>
+      </div>
+
+
+      <!-- Copyright -->
+
+      <!-- Copyright -->
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../static/scripts/search.js"></script>
+    
+  </body>
+</html>

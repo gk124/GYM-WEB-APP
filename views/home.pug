@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Torque Fitness</title>
+  <link rel="stylesheet" href="../static/css/chat.css">
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark nav-1" id="navbar">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="/" style="text-decoration: none;"><h2 class="logo"><span>TORQUE</span>FITNESS</h2></a>
+      <!-- <div id="icon">
+        <i class="fas fa-bars"></i>
+      </div> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav navbar-expand-md ml-auto nav-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#feature">Features</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#contact">ContactUs</a>
+          </li>
+
+          <li class="nav-item">
+            <div class="drop">
+              <a class="nav-link " href="#">Programs</a>
+              <div class="dropdown-content">
+                <a href="personalTraining.pug">Personal Training</a>
+                <a href="./member.pug">Membership</a>
+                <!-- <a href="#">Link 3</a> -->
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./trainers.pug">Trainer</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- home section starts -->
+  <section id="home">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../static/images/img-2.jpg" alt="Los Angeles" width="100%" height="600" />
+          <div class="carousel-caption">
+            <h3>Be Fit, Be Strong</h3>
+            <h1>Train Insane Or Be The Same</h1>
+            <a href="./member.pug"><button type="button" class="btn btn-danger btn-1"> Get Started</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../static/images/img-3.jpg" alt="Chicago" width="100%" height="600" />
+          <div class="carousel-caption">
+            <h3>Be Fit, Be Strong</h3>
+            <h1>LATER = NEVER</h1>
+            <h1>DO IT NOW</h1>
+            <a href="./member.pug"><button type="button" class="btn btn-danger btn-1"> Get Started</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../static/images/img-1.jpg" alt="New York" width="100%" height="600" />
+          <div class="carousel-caption">
+            <h3>Be Fit, Be Strong</h3>
+            <h1>FITNESS</h1>
+            <h1>It's a way of life</h1>
+            <a href="./member.pug"><button type="button" class="btn btn-danger btn-1"> Get Started</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home section end -->
+
+  <!-- about section starts -->
+
+  <div id="about">
+    <div class="container mt-3 about">
+      <br>
+      <h1><u> ABOUT US</u></h1>
+      <br>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#about-1">
+            <h4>What we do</h2>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#about-2">
+            <h4>Why are we different</h4>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#about-3">
+            <h4>Why choose us</h4>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div id="about-1" class="container tab-pane active"><br>
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="../static/images/img-4.webp" alt="" width=100%>
+            </div>
+            <div class="col-sm-8">
+              <h1>What we do</h1><br>
+              <p style="color: rgb(217, 188, 188);">
+                | Torque Fitness Has Been The Authority In Fitness Since 2022.
+                | In Patna, Bihar. It Is The Place For Serious Fitness. Opened Long Before The Modern-Day
+                | Health Club Existed, It Featured Homemade Equipment And A Dedication To
+                | Getting Results. It Was An Instant Hit. Torque Fitness May Quickly Become Known As "The Mecca Of
+                | Bodybuilding."'
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="about-2" class="container tab-pane fade"><br>
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="../static/images/img-4.webp" alt="" width=100%>
+            </div>
+            <div class="col-sm-8">
+              <h1>Why are we different</h1><br>
+              <p style="color: rgb(217, 188, 188);">
+                | Torque Fitness Has Expanded Its Fitness Profile To Offer All Of The Latest Equipment And Services
+                | Making It The Best In The Industry. Torqure Fitness Provides A Comprehensive Approach To The Health
+                | And Wellbeing Of Its Members With Certified Trainers And Nutritional Counseling.
+                | Whether Your Goal Is To Burn Fat, Tone Or Add Muscle, Build Strength, Increase Flexibility Or
+                | Improve Your Cardiovascular Health, Torque Fitness Lives Up To Its Reputation To Give Results.
+                | We Believes That Fitness Is Not Just About A Toned Body But The Power To Overcome All The Obstacles.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="about-3" class="container tab-pane fade"><br>
+          <div class="row">
+
+            <div class="col-sm-4">
+              <img src="../static/images/img-4.webp" alt="" width=100%>
+            </div>
+            <div class="col-sm-8">
+              <h1>Why choose us</h1><br>
+              <p style="color: rgb(217, 188, 188);">
+                | Known For The Unrivaled Success Of Providing State-Of-The-Art Equipment And Fitness Knowledge
+                | We Have Had A Comprehensive Approach To The Overall Health And Wellbeing Of The Members.
+                | At Torque Fitness, It's Not Only About Working Out But Having A Healthy Lifestyle.
+              </p>
+              <p style="color: rgb(217, 188, 188);">
+                | We Have Also Been Doing A Lot Of Corporate & Community Wellness Programs,
+                | Reaching Out To People Who Want To Get Fitter But Cannot Make It To The Gym.
+                | We Have Focused On The Overall Experience. It Is Not Just About Getting Into A Particular Shape But
+                | It’s All About FITNESS, A Healthy Lifestyle, And, A Complete Transformation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- gym features section -->
+
+  <div id="feature">
+    <h1><u style="border: 2px solid rgb(244, 243, 243) ;">GYM FEATURES</u></h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <a href="./member.pug"><img class="img" src="../static/images/img-6.jpg" alt="" width=100%></a>
+        </div>
+        <div class="col-sm-4">
+          <div style="text-align: center;padding-top: 15px;"><img src="../static/images/img-9.jpg" alt="" width=25%>
+          </div>
+          <br>
+          <div style="color: rgb(252, 251, 251); text-align: center;">
+            <h4>GYM FOR MEN</h4>
+          </div>
+          <a href="./member.pug" style=" color:red; text-align:center;text-decoration: none;">
+            <h3 style="font-size:50px ;font-weight:800;">&#x2192;</h3>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="./member.pug"><img class="img" src="../static/images/img-7.jpg" alt="" width=100%></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div style="text-align: center;    padding-top: 15px;"><img src="../static/images/img-10.jpg" alt="" width=25% style="filter: invert(1);"></div>
+          <br>
+          <div style="color: rgb(252, 251, 251); text-align: center;">
+            <h4>BODY BUILDING</h4>
+          </div>
+          <a href="./member.pug" style=" color:red; text-align:center;text-decoration: none;">
+            <h3 style="font-size:50px ;font-weight:800;">&#x2192;</h3>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="./member.pug"><img class="img" src="../static/images/img-8.jpg" alt="" width=100%></a>
+        </div>
+        <div class="col-sm-4">
+          <div style="text-align: center; padding-top: 15px;"><img src="../static/images/img-11.jpg" alt="" width=25% style="filter: invert(1);"></div>
+          <br>
+          <div style="color: rgb(252, 251, 251); text-align: center;">
+            <h4>GYM FOR WOMEN</h4>
+          </div>
+          <a href="./member.pug" style=" color:red; text-align:center;text-decoration: none;">
+            <h3 style="font-size:50px ;font-weight:800;">&#x2192;</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- feature part end -->
+
+  <!-- contact us part start -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="../static/images/img-12.jpg" alt="" width=100%>
+        </div>
+        <div class="col-sm-8">
+          <h1 style="color: white;">Get In <span style="color: red;">TOUCH</span> With Us</h1><br><br>
+          <div class="container">
+            <form action="/" method="post" class="needs-validation">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter phone-no." required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="describe" name="describe" placeholder="Mention something about yourself..../ Any Query...." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">Send Query</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact end -->
+
+  <!-- gallery slider -->
+
+  <div id="gallery">
+    <div class="container">
+
+      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+        <!--Controls-->
+        <!-- <div class="controls-top">
+          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        </div> -->
+        <!--/.Controls-->
+  
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+  
+          <!--First slide-->
+          <div class="carousel-item active">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-20.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-21.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-22.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.First slide-->
+  
+          <!--Second slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-23.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-24.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-25.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Second slide-->
+  
+          <!--Third slide-->
+          <div class="carousel-item">
+  
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-26.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-27.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-4 clearfix d-none d-md-block">
+                <div class="card mb-2">
+                  <img class="card-img-top" src="../static/images/img-28.jfif" alt="Card image cap" width="100%" height="250px">
+                  <div class="card-body">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <!--/.Third slide-->
+  
+        </div>
+        <!--/.Slides-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+          <li data-target="#multi-item-example" data-slide-to="1"></li>
+          <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+  
+      </div>
+
+    </div>
+  </div>
+
+  <!-- footer starts -->
+
+  <footer class="page-footer font-small bg-dark text-white">
+    <div class="bg-color pt-4">
+        <div class="container">
+            <div class="row margintop80">
+                <div class="col-sm-4">
+                  |  TORQUE FITNESS was started on World Health Day on 7 th April 2022.
+                  |  TORQUE FITNESS offers the most exciting and up-to-date curriculum as well as ongoing training in all aspects of the fitness industry.
+                  |  TORQUE FITNESS is the only Advanced Personal Trainer program, which offers you low-cost tuition, fast test results and complete career development.
+                </div>
+                <div class="col-sm-4">
+                    <h4 style="color: rgba(231, 209, 7, 0.922);">OUR SITEMAP</h4>
+                    <p style="color:red;font-weight:900">____________</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#home" style="color:white;">> HOME</a><br>
+                            <a href="./member.pug" style="color:white">> Membership</a><br>
+                            <a href="#contact" style="color:white">> Constact-Us</a><br>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#about" style="color:white">> About us</a><br>
+                            <a href="./member.pug" style="color:white">> Members</a><br>
+                            <a href="./admin_login.pug" style="color:white">> Admin Panel</a><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <h4 style="color: rgba(231, 209, 7, 0.922);">NEWSLETTER</h4>
+                    <p style="color:red;font-weight:900">____________</p>
+                    <br>
+                    <p>Sign Up for Our Newsletter to Get Latest Updates & Services</p>
+                    <br>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <!-- <div class="input-group-append"> -->
+                            <button class="btn btn-danger text-white" type="submit" style="background-color: red;">➩</button>
+                            <!-- </div> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2022 <span style="color: red;"> TORQUE</span>FITNESS. |All Copyrights Reserverd. | Developed By <span style="color:rgb(255, 217, 0)">GUNJAN KUMAR</span>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+
+    <!-- Copyright -->
+
+  </footer>
+
+
+  <!-- chat bot section -->
+
+  <!-- CHAT BAR BLOCK -->
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: rgb(239, 3, 3);" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+        <div class="full-chat-block">
+            <!-- Message Container -->
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp" style="color: red;"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                              |  placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                | onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                              |  onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  </div>
+
+  <!-- chat bot section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../static/scripts/responses.js"></script>
+  <script src="../static/scripts/chat.js"></script>
+
+</body>
+
+</html>
