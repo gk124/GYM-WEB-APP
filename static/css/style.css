@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+}
+body{
+    margin-top: 55px !important;
+    margin-right: 0px;
+    margin-bottom: 0px !important;
+    margin-left: 0px
+}
+.logo span{
+    color: rgb(255, 0, 0);
+    font-size: xx-large;
+    font-weight: 900;
+}
+.logo {
+    color: rgb(253, 253, 253);
+    font-size: xx-large;
+    font-weight: 900;
+    transition: 0.4s;
+}
+.nav-1{
+    background-color: black;
+    float: left;
+    width: 100%;
+}
+
+.nav-2 li{
+    justify-content: flex-end ;
+    padding: 5px 7px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+} 
+.nav-2 li a{
+    color: rgb(255, 255, 255);
+}
+.nav-2 li a:hover{
+    background-color: red;
+    color: black !important;
+}
+/* drop down for programs */
+.drop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #010000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(246, 246, 246, 0.909);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(240, 15, 15);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(12, 9, 9);}
+  
+  .drop:hover .dropdown-content {display: block;}
+  
+  
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;    
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: black;
+}
+html::-webkit-scrollbar-thumb{
+    background: #ef081f;
+}
+.btn-1:hover{
+    transform: scale(1.1);
+    transition: 1.2s;
+    background-color: red !important;
+    color: white;
+    font-size: large;
+}
+
+
+.carousel-caption{
+    left: -40% !important;
+    padding-bottom: 200px !important;
+}
+.carousel-caption h3{
+    color: red;
+}
+.carousel-item img{
+    opacity: 0.8;
+}
+.carousel-indicators li{
+    background-color: #000000 !important;
+    width: 19px !important;
+    height: 15px !important;
+}
+
+
+/* about part */
+#about .col-sm-8 h1{
+    color: grey;
+} 
+
+#about .col-sm-8 p{
+    color: red; 
+    font-size: 20px;
+} 
+.about ul li a{
+    color: black;
+}
+.about h1{
+    text-align: center;
+    padding: 20px;
+}
+#about{
+    background-color: black;
+    margin-top:0px !important;
+    padding: 10px;
+    
+}
+.about ul li a h4{
+    color: red;
+}
+.about h1 u{
+    color: red;
+    font-size:larger ;
+    font-weight: 700;
+}
+
+/* features section */
+
+#feature h1{
+    color: red;
+    text-align: center;
+    font-weight: 700;
+    padding: 25px;
+}
+#feature .container .col-sm-4 .img:hover{
+    transform: scale(1.12);
+    transition: 1.2s;
+}
+#feature{
+    background-color: black;
+    padding: 50px;
+}
+#feature .container .col-sm-4{
+    background-color: #230505;
+}
+/* feature ends */
+
+/* contact part */
+#contact{
+    padding: 100px 50px;
+    background-color:rgba(12, 11, 11, 0.82);
+}
+#contact .container .col-sm-8{
+    text-align: center;
+    justify-content: center;
+}
+
+/* contact ens  */
+
+/*  gallery  */
+#gallery .carousel-item img {
+    opacity: 1 !important;
+}
+#gallery{
+    background-color: #010000;
+    padding:50px;
+}
+
+/* footer starts */
+.page-footer{
+    margin-top: -30px !important;
+    background: url(../images/img-14.webp);
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-sizing:border-box !important;
+   
+}
+.margintop80{
+    margin-top: 150px;
+}
+.bg-color{ 
+    padding-bottom:30px;
+    margin-top: 30px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 0 2 rem;
+    }
+}
+@media (max-width:768px){
+    .header{
+        padding: 2rem;
+    }
+    .header .nav-1{
+        position: absolute;
+        top: 0%; left: 0; right: 0;
+
+    }
+    .nav-1 li{
+        display:list-item;
+    }
+    
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 55%;
+    }
+    
+} */
